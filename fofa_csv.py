@@ -79,7 +79,7 @@ if __name__ == '__main__':
             print("end")
         if (args.file != None):
             str_file = args.file
-            file = open(str_file)
+            file = open(str_file,"r",encoding='utf-8')
             while 1:
                 s_str = file.readline().strip('\n')
                 if not s_str:
